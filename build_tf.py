@@ -60,7 +60,7 @@ def main():
     setup_venv(venv_dir)
 
     # Download TensorFlow
-    download_repo("tensorflow", "https://github.com/tensorflow/tensorflow.git",
+    download_repo("tensorflow", "git@github.com:masaki170401/tensorflow.git",
                   arguments.tf_version)
 
     # Build TensorFlow

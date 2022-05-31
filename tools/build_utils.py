@@ -159,7 +159,7 @@ def setup_venv(venv_dir):
         "wheel>=0.26",
         "mock",
         "termcolor>=1.1.0",
-        "protobuf>=3.6.1",
+        "protobuf==3.20.1",
         "keras_applications>=1.0.6",
         "--no-deps",
         "keras_preprocessing==1.0.5",

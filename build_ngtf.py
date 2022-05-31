@@ -54,7 +54,7 @@ def main():
 
     # Component versions
     ngraph_version = "v0.28.0-rc.1"
-    tf_version = "v1.14.0"
+    tf_version = "v1.14.0-nishi"
 
     # Command line parser options
     parser = argparse.ArgumentParser(formatter_class=RawTextHelpFormatter)
@@ -286,7 +286,7 @@ def main():
             os.chdir(artifacts_location)
             print("DOWNLOADING TF: PWD", os.getcwd())
             download_repo("tensorflow",
-                          "https://github.com/tensorflow/tensorflow.git",
+                          "git@github.com:masaki170401/tensorflow.git",
                           tf_version)
             os.chdir(pwd_now)
 
@@ -320,7 +320,7 @@ def main():
             print("Building TensorFlow from source")
             # Download TensorFlow
             download_repo("tensorflow",
-                          "https://github.com/tensorflow/tensorflow.git",
+                          "git@github.com:masaki170401/tensorflow.git",
                           tf_version)
             tf_src_dir = os.path.join(os.getcwd(), "tensorflow")
             # Build TensorFlow
